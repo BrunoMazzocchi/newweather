@@ -1,9 +1,9 @@
 class CurrentWeatherEntity { 
-  final double temperature;
-  final double windSpeed; 
-  final double windDirection; 
-  final int weatherCode; 
-  final int isDay; 
+  final num temperature;
+  final num windSpeed; 
+  final num windDirection; 
+  final num weatherCode; 
+  final num isDay; 
   final DateTime time; 
 
   const CurrentWeatherEntity ({

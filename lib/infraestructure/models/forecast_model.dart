@@ -1,13 +1,13 @@
 import 'package:newweather/infraestructure/models/current_weather_model.dart';
 
 class ForecastModel { 
-  final double latitude; 
-  final double longitude; 
-  final double generationTime; 
-  final int utcOffsetSeconds; 
+  final num latitude; 
+  final num longitude; 
+  final num generationTime; 
+  final num utcOffsetSeconds; 
   final String timezone; 
   final String timezoneAbbreviation;
-  final double elevation; 
+  final num elevation; 
   final CurrentWeatherModel currentWeather;
 
   const ForecastModel({
@@ -25,10 +25,10 @@ class ForecastModel {
     return ForecastModel(
       latitude: json['latitude'],
       longitude: json['longitude'],
-      generationTime: json['generation_time'],
+      generationTime: json['generationtime_ms'],
       utcOffsetSeconds: json['utc_offset_seconds'],
       timezone: json['timezone'],
-      timezoneAbbreviation: json['timezone_abbr'],
+      timezoneAbbreviation: json['timezone_abbreviation'],
       elevation: json['elevation'],
       currentWeather: CurrentWeatherModel.fromJson(json['current_weather']),
     );

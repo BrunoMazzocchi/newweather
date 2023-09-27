@@ -1,13 +1,13 @@
 import 'package:newweather/domain/entities/current_weather_entity.dart';
 
 class ForecastEntity { 
-  final double latitude; 
-  final double longitude; 
-  final double generationTime; 
-  final int utcOffsetSeconds; 
+  final num latitude; 
+  final num longitude; 
+  final num generationTime; 
+  final num utcOffsetSeconds; 
   final String timezone; 
   final String timezoneAbbreviation;
-  final double elevation; 
+  final num elevation; 
   final CurrentWeatherEntity currentWeather;
 
   const ForecastEntity({
